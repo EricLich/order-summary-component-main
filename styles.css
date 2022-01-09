@@ -17,10 +17,19 @@
 
 body {
 	font-family: "Red Hat Display", sans-serif;
-	background-color: var(--very-pale-blue);
 	height: 100vh;
 	display: grid;
 	place-content: center;
+	background: url("./images/pattern-background-mobile.svg") no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+@media (min-width: 768px) {
+	body {
+		background: url("./images/pattern-background-desktop.svg") no-repeat;
+		background-color: var(--pale-blue);
+	}
 }
 
 .container {
