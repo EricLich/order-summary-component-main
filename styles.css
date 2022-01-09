@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+	--pale-blue: hsl(225, 100%, 94%);
+	--bright-blue: hsl(245, 75%, 52%);
+
+	--very-pale-blue: hsl(225, 100%, 98%);
+	--desaturated-blue: hsl(224, 23%, 55%);
+	--dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Red Hat Display", sans-serif;
+	background-color: var(--very-pale-blue);
+	height: 100vh;
+	display: grid;
+	place-content: center;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+}
+
+.container-card {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.card {
+	background-color: #fff;
+	width: 100%;
+	max-width: 450px;
+	border-radius: 20px;
+	box-shadow: 0px 30px 15px -8px var(--pale-blue);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-bottom: 30px;
+}
+
+.card-top img {
+	width: 100%;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	margin-bottom: 20px;
+}
+
+.card-order-summary h1 {
+	font-size: 22px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+	.card-order-summary h1 {
+		font-size: 24px;
+		font-weight: 900;
+	}
+}
+
+.card-order-summary p {
+	text-align: center;
+	color: var(--desaturated-blue);
+	font-weight: 600;
+	font-size: 16px;
+	margin-bottom: 25px;
+}
+
+.plan {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--very-pale-blue);
+	padding: 15px;
+	border-radius: 15px;
+	margin-bottom: 25px;
+}
+
+.plan .circle-anual {
+	display: flex;
+	align-items: center;
+}
+
+.circle-anual img {
+	margin-right: 15px;
+}
+
+.plan-cost {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.plan-cost h3 {
+	font-size: 16px;
+	font-weight: 900;
+}
+
+.plan-cost p {
+	font-size: 14px;
+	color: var(--desaturated-blue);
+}
+
+.plan .change-plan {
+	border: none;
+	background-color: transparent;
+	font-size: 14px;
+	font-weight: 900;
+	text-decoration: underline;
+	color: var(--bright-blue);
+	cursor: pointer;
+}
+
+.btns {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.btns .proceed {
+	border: none;
+	background-color: var(--bright-blue);
+	width: 100%;
+	padding: 17px 0;
+	border-radius: 10px;
+	color: white;
+	font-size: 16px;
+	font-weight: 700;
+	box-shadow: 1px 7px 30px -8px var(--bright-blue);
+	margin-bottom: 25px;
+	cursor: pointer;
+}
+
+.btns .cancel {
+	border: none;
+	background-color: transparent;
+	font-size: 16px;
+	font-weight: 700;
+	color: var(--desaturated-blue);
+	cursor: pointer;
+}
