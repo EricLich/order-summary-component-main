@@ -21,6 +21,7 @@ body {
 	display: grid;
 	place-content: center;
 	background: url("./images/pattern-background-mobile.svg") no-repeat;
+	background-color: var(--pale-blue);
 	background-size: cover;
 	background-position: center;
 }
@@ -129,6 +130,11 @@ body {
 	cursor: pointer;
 }
 
+.plan .change-plan:hover {
+	text-decoration: none;
+	color: var(--desaturated-blue);
+}
+
 .btns {
 	display: flex;
 	flex-direction: column;
@@ -147,6 +153,12 @@ body {
 	box-shadow: 1px 7px 30px -8px var(--bright-blue);
 	margin-bottom: 25px;
 	cursor: pointer;
+	transition: ease-in 0.2s;
+}
+
+.btns .proceed:hover {
+	background-color: var(--dark-blue);
+	box-shadow: 1px 7px 30px -8px var(--dark-blue);
 }
 
 .btns .cancel {
@@ -156,4 +168,9 @@ body {
 	font-weight: 700;
 	color: var(--desaturated-blue);
 	cursor: pointer;
+	transition: ease-in 0.2s;
+}
+
+.btns .cancel:hover {
+	color: var(--dark-blue);
 }
